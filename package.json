@@ -1,0 +1,28 @@
+{
+  "name": "tailwind-css",
+  "version": "1.0.0",
+  "description": "Learning Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Tailwind CSS"
+  },
+  "keywords": [
+    "tailwindcss",
+    "utility-first",
+    "responsive-design",
+    "frontend-development",
+    "css-framework"
+  ],
+  "author": "isherezahin",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.8"
+  }
+}
