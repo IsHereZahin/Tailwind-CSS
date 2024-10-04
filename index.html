@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Tailwind CSS</title>
+    <title>Portfolio Page</title>
     <link rel="stylesheet" href="./css/tailwind.css">
+    <style>
+        .glow-button {
+            box-shadow: 0px 0px 15px rgba(0, 230, 142, 0.6);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #00e6ad, #00E2D1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:focus, .glow-button:focus {
+            outline: 2px solid #00e6ad;
+        }
+    </style>
 </head>
-<body>
-    <h1 class="bg-blue-400 text-center">Hello World</h1>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white font-sans transition duration-500">
+    <div class="min-h-screen flex flex-col justify-center items-center p-8">
+        <div class="text-center">
+            <p class="text-2xl md:text-3xl">Hi!</p>
+            <h1 class="text-4xl md:text-6xl font-bold mt-2">You can call me <span class="gradient-text">Zahin</span></h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400 mt-2">Software Engineer at 
+                <a href="https://isherezahin.vercel.app/" class="text-teal-600 hover:text-teal-700 dark:hover:text-teal-500 dark:text-teal-400">Iconic Solutions Pvt. Ltd.</a>
+            </p>
+
+            <p class="text-lg text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
+                I work with Laravel, Vue.js, and write to teach people how to rebuild and redefine fundamental concepts through mental models.
+            </p>
+
+            <p class="mt-2">
+                Don't forget to sign my 
+                <a href="https://isherezahin.vercel.app/" class="text-teal-500 hover:text-teal-600 dark:hover:text-teal-500 dark:text-teal-400">guestbook!</a>
+            </p>
+
+            <div class="mt-6 flex justify-center gap-4">
+                <a href="https://isherezahin.vercel.app/"
+                    class="px-4 py-2 bg-teal-600 text-white font-semibold rounded hover:bg-teal-500 glow-button dark:bg-teal-400 dark:text-gray-800 transition duration-300">
+                    Read the blog
+                </a>
+                <a href="https://isherezahin.vercel.app/"
+                    class="px-4 py-2 bg-gray-500 text-white font-semibold rounded hover:bg-gray-600 dark:bg-gray-600 dark:hover:bg-gray-700 dark:text-white transition duration-300">
+                    Learn more about me
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
